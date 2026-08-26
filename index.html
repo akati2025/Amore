@@ -9,101 +9,43 @@
 
     <style>
         /* ページ全体 */
+        html,
         body {
             margin: 0;
             padding: 0;
+            width: 100%;
+            min-height: 100%;
             background-color: #f8f8f8;
-            text-align: center;
         }
 
-        /* タイトル */
-        h1 {
-            margin: 20px 0;
-            font-size: 32px;
-            color: #333;
-        }
-
-        /* 画像を配置するエリア */
-        .image-link {
-            position: relative;
+        /* 画像全体をリンクにする */
+        .page-link {
+            display: block;
             width: 100%;
             max-width: 900px;
             margin: 0 auto;
         }
 
-        /* メイン画像 */
-        .image-link img {
+        /* 画像 */
+        .page-link img {
+            display: block;
             width: 100%;
             height: auto;
-            display: block;
-        }
-
-        /* LINEで登録のクリックエリア */
-        .line-link {
-            position: absolute;
-
-            /*
-             * 「LINEで登録」の位置
-             * 必要に応じて数値を調整してください
-             */
-            left: 20%;
-            top: 80%;
-            width: 60%;
-            height: 10%;
-
-            display: block;
-        }
-
-        /* スマホ対応 */
-        @media (max-width: 600px) {
-
-            h1 {
-                margin: 15px 0;
-                font-size: 24px;
-            }
-
-            .image-link {
-                width: 100%;
-            }
-
-            .image-link img {
-                width: 100%;
-                height: auto;
-            }
-
-            .line-link {
-                left: 20%;
-                top: 80%;
-                width: 60%;
-                height: 10%;
-            }
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Amore</h1>
+    <a
+        href="https://lin.ee/xxxxx"
+        class="page-link"
+        target="_blank"
+        rel="noopener noreferrer">
 
-    <main>
+        <img src="Amore.jpeg" alt="Amore">
 
-        <div class="image-link">
-
-            <!-- Amoreの画像 -->
-            <img src="Amore.jpeg" alt="Amore">
-
-            <!-- LINEで登録の部分だけクリック可能 -->
-            <a
-                href="https://lin.ee/xxxxx"
-                class="line-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LINEで登録">
-            </a>
-
-        </div>
-
-    </main>
+    </a>
 
 </body>
 
