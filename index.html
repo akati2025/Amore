@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Amore</title>
+
     <style>
-        /* ページ全体 */
         html,
         body {
             margin: 0;
@@ -17,7 +17,7 @@
             background-color: #f8f8f8;
         }
 
-        /* 画像全体をリンクにする */
+        /* 画像・リンク共通 */
         .page-link {
             display: block;
             width: 100%;
@@ -26,7 +26,8 @@
         }
 
         /* 画像 */
-        .page-link img {
+        .page-link img,
+        .banner {
             display: block;
             width: 100%;
             height: auto;
@@ -35,7 +36,11 @@
 </head>
 
 <body>
-<img  class="page-link" src="baner.png" alt="baner">
+
+    <!-- バナー -->
+    <img class="page-link banner" src="baner.png" alt="baner">
+
+    <!-- Amore画像 -->
     <a
         href="https://lin.ee/xxxxx"
         class="page-link"
