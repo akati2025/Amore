@@ -26,11 +26,21 @@
         }
 
         /* 画像 */
-        .page-link img,
-        .banner {
+        .page-link img {
             display: block;
             width: 100%;
             height: auto;
+        }
+
+        /* LINE案内 */
+        .line-text {
+            width: 100%;
+            max-width: 900px;
+            margin: 15px auto;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #06c755;
         }
     </style>
 </head>
@@ -38,9 +48,14 @@
 <body>
 
     <!-- バナー -->
-    <img class="page-link banner" src="baner.png" alt="baner">
+    <img class="page-link" src="baner.png" alt="baner">
 
-    <!-- Amore画像 -->
+    <!-- LINE友達登録案内 -->
+    <div class="line-text">
+        ↓クリックでLINE友達登録↓
+    </div>
+
+    <!-- Amore画像（クリックでLINE） -->
     <a
         href="https://lin.ee/xxxxx"
         class="page-link"
