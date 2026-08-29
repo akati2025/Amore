@@ -55,11 +55,16 @@
 
         /* 下向き矢印 */
         .line-arrow {
-            display: block;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
             font-size: 32px;
-            letter-spacing: 40px;
-            margin-right: -40px;
             line-height: 1.2;
+        }
+
+        .line-arrow span {
+            display: block;
         }
 
         /* 最下部メッセージ */
@@ -84,7 +89,12 @@
     <!-- LINE友だち登録案内 -->
     <div class="line-text">
         クリックでLINE友だち登録
-        <span class="line-arrow">↓　　↓　　↓</span>
+
+        <div class="line-arrow">
+            <span>↓</span>
+            <span>↓</span>
+            <span>↓</span>
+        </div>
     </div>
 
     <!-- Amore画像（クリックでLINE） -->
